@@ -44,10 +44,14 @@ header{
   justify-content: space-evenly;
   justify-items: center;
   text-align: center;
+  h2{
+    color:#f78786;
+  }
   .menu{
     display: none;
     h2{
       margin:0;
+      color:#f78786;
     }
     @media #{$maxMedium}{
       display: flex;
@@ -56,6 +60,7 @@ header{
     }
   }
   @media #{$maxMedium}{
+    color:#f78786;
     display: flex;
     position: fixed;
     top: 0;
@@ -64,9 +69,13 @@ header{
   nav{
   display:inline-flex;
   .nav-item{
+    h2{
+      color:#f78786;
+    }
     text-decoration: none;
     margin-left: 100px;
     text-transform: capitalize;
+    color:#f78786;
     @media #{$maxMedium}{
       display: none;
     }
