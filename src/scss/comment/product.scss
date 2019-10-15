@@ -1,0 +1,51 @@
+$maxMedium :"(max-width: 992px)";
+.container{
+    display: inline-flex;
+    width:25%;
+    height: auto;
+    @media #{$maxMedium}{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+  
+      }
+    .card{
+        
+        background-color: #fff;
+        margin-bottom: 30px;
+        margin: 20px;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+        border-radius: 6px;
+        
+        img{
+            background-size: cover;
+            width: 100%;
+            height: auto;
+        }
+        
+        .text-card{
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+button{
+    background: transparent;
+    outline: none;
+    border: 2px solid #f78786;
+    padding: 5px;
+    color: #f78786;
+    text-transform: capitalize;
+    margin-left: auto;
+    display: flex;
+    margin-right: 30px;
+    border-radius:6px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover{
+        background: #f78786;
+        color: #fff;
+    }
+  }

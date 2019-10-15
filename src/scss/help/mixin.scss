@@ -1,0 +1,54 @@
+
+/*
+---overlay mixin
+---auto overlay 
+
+*/
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+---prefixer mixin
+---auto prefixer 
+
+*/
+@mixin prefixer($propetry,$value,$prefixes : ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $propetry}:$value;
+    }
+   #{$propetry}:$value;
+    
+}
+/*
+---animation mixin
+
+*/
+@mixin keyFrame($animationName) {
+    @-webkit-keyframes #{$animationName}{
+        @content;
+    }
+    @-moz-keyframes #{$animationName}{
+        @content;
+    }
+    
+    @keyframes #{$animationName}{
+        @content;
+    }
+    
+}
+
+/* mixin transion*/
+@mixin transition($args...){
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+
+/* mixin transion*/

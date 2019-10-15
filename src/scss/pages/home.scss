@@ -1,0 +1,721 @@
+
+// strat layout
+.layout{
+    margin: 20px;
+    background-color: #fff;
+
+    
+    //  start about me
+    .about-me{
+        display: flex;
+        justify-content: space-around;
+       padding-top: 100px;
+       @media #{$maxMedium}{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       @media #{$maxMobile}{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           
+       }
+       
+        //  start my-education
+        .my-education{
+            width: 300px;
+            height:300px;
+            position: relative;
+            cursor: pointer;
+            @media #{$maxMedium}{
+                margin-bottom: 100px;
+               }
+            @media #{$maxMobile}{
+                // width: 100%;
+                margin-bottom: 100px;
+                overflow: hidden;
+            }
+            
+            &:hover{
+                .my-education1{
+                    transform: rotate(92deg);
+                }
+            }
+            .my-education1{
+                width: 300px;
+                height: 300px;
+                background-color: #eee ;
+                border-radius: 40% 30% 70% 20%/ 20% 50% 20% 30%;
+                @include prefixer(transform,rotate(45deg),webkit moz o);
+                @include transition(1s ease-in-out);
+                @media #{$maxMobile}{
+                    width: 100% !important;
+                    @include prefixer(transform,rotate(-10deg),webkit moz o);
+                }
+               
+            }
+            .my-education2{
+                width: 100%;
+                height: 100%;
+                background-color:rgba($mainColor, .8);
+                border-radius: 40% 30% 70% 20%/20% 50% 20% 30%;
+                line-height: 300px;
+                position: absolute;
+                bottom: 5px;
+                color: #fff;
+                text-transform: capitalize;
+                h5{
+                    margin-top: 30px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                        top: 20px;
+                        left: 100px;
+                        
+                    }
+                }
+                ul{
+                    li{
+                        line-height: 2;
+                        list-style: disc;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        //  end my-education
+
+        //  start my my-experiments
+        .my-experiments{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            cursor: pointer;
+            @media #{$maxMedium}{
+                margin-bottom: 100px;
+               }
+            @media #{$maxMobile}{
+                // width: 100%;
+                margin-bottom: 100px;
+                overflow: hidden;
+            }
+            
+            &:hover{
+                .my-experiments1{
+                    transform: rotate(92deg);
+                }
+            }
+            .my-experiments1{
+                width: 300px;
+                height: 300px;
+                background-color: #eee ;
+                border-radius: 40% 30% 70% 20%/ 20% 50% 20% 30%;
+                line-height: 300px;
+                @include prefixer(transform,rotate(45deg),webkit moz o);
+                @include transition(1s ease-in-out);
+                @media #{$maxMobile}{
+                    width: 100%;
+                    @include prefixer(transform,rotate(-10deg),webkit moz o);
+                }
+            }
+            .my-experiments2{
+                width: 100%;
+                height: 100%;
+                background-color:rgba($mainColor, .8);
+                border-radius: 40% 30% 70% 20%/20% 50% 20% 30%;
+                line-height: 300px;
+                position: absolute;
+                bottom: 5px;
+                color: #fff;
+                text-transform: capitalize;
+                h5{
+                    margin-top: 30px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                        top: 20px;
+                        left: 100px;
+                        
+                    }
+                }
+                ul{
+                    li{
+                        line-height: 2;
+                        list-style: disc;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        //  end my-experiments
+
+        //  start my-attention
+        .my-attention{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            cursor: pointer;
+            @media #{$maxMobile}{
+                // width: 100%;
+                margin-bottom: 100px;
+                overflow: hidden;
+            }
+          
+            &:hover{
+                .my-attention1{
+                    transform: rotate(92deg);
+                }
+            }
+            .my-attention1{
+                width: 300px;
+                height: 300px;
+                background-color: #eee ;
+                border-radius: 40% 30% 70% 20%/ 20% 50% 20% 30%;
+                line-height: 300px;
+                @include prefixer(transform,rotate(45deg),webkit moz o);
+                @include transition(1s ease-in-out);
+                @media #{$maxMobile}{
+                    width: 100%;
+                    @include prefixer(transform,rotate(-10deg),webkit moz o);
+                }
+                
+            }
+            .my-attention2{
+                width: 100%;
+                height: 100%;
+                background-color:rgba($mainColor, .8);
+                border-radius: 40% 30% 70% 20%/20% 50% 20% 30%;
+                line-height: 300px;
+                position: absolute;
+                bottom: 5px;
+                color: #fff;
+                text-transform: capitalize;
+                h5{
+                    margin-top: 30px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        height: 1px;
+                        border-bottom: 1px solid #fff;
+                        top: 20px;
+                        left: 100px;
+                        
+                    }
+                }
+                ul{
+                    li{
+                        line-height: 2;
+                        list-style: disc;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        
+        //  end my-attention
+    }
+    //  end about me
+    
+    //  start my-work
+    .my-work{
+        // start my-work-content
+        .my-work-content{
+            width: 100%;
+            display: flex;
+            margin-top: 30px;
+            @media #{$maxMedium}{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               }
+            @media #{$maxMobile}{
+                flex-direction: column;
+            }
+            
+            //  star content
+            
+            .content{
+                display: flex;
+                margin-left: 15px;
+                position: relative;
+                @media #{$maxMedium}{
+                    margin-bottom: 30px;
+                    margin-left: 0;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                   }
+                @media #{$maxMobile}{
+                   margin-bottom: 30px;
+                   margin-left: 0;
+                   &:last-child{
+                       margin-bottom: 0;
+                   }
+                }
+               
+                cursor: pointer;
+                
+                &:nth-last-child(3){
+                    margin-left: 0;
+                }
+                &:hover{
+                    .overlay{
+                        display: block !important;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    @include prefixer(box-shadow,0px 3px 16px 0px rgba(0,0,0,0.1),webkit moz o);
+                    @include prefixer(background-size,cover,webkit moz o);
+                }
+                   
+               
+                
+                //  strat overlay
+                .overlay{
+                    display: none;
+                    @include overlay;
+                    color: #fff;
+                    background-color: rgba($mainColor, .9);
+                    @include prefixer(transition,1s all ease-in-out,webkit moz o);
+                    .overlay-content{
+                        margin: 70px auto;
+                        @media #{$maxMedium}{
+                            margin: 150px auto;
+                           }
+                        @media #{$maxMobile}{
+                            margin: 30px auto;
+                         }
+                         
+                        i{
+                            line-height: 50px;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            width: 50px;
+                            height: 50px;
+                            color: $mainColor;
+                            cursor: pointer;
+                            margin: 20px auto;
+                        }
+                    }
+                }
+                //  end overlay
+               
+            }
+            //  end content
+            
+                // start detail-work
+                .detail{
+                    display: none; 
+                    position: fixed; 
+                    z-index: 999999; 
+                    padding-top: 10px; 
+                    left: 0;
+                    top: 0;
+                    width: 100%; 
+                    height: 100%; 
+                    overflow: auto; 
+                    background-color: rgba(0,0,0,0.4); 
+                    //  start detail content
+                    .detail-content{
+                        margin: auto;
+                        padding: 20px;
+                        width: 40%;
+                        @media #{$maxMedium}{
+                            width: 100%;
+                           }
+                        @media #{$maxMobile}{
+                            width: 100%;
+                        }
+                        
+                        //  start close
+                        .close{
+                            color: $mainColor;
+                            float: $text-right;
+                            font-size: 28px;
+                            font-weight: bold;
+                            &:hover{
+                                color: #fff;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                        }
+                        //  end close
+                        
+                        //  start slider
+                        .content-detail2{
+                            margin-top: 60px;
+                            background-color: #fefefe;
+                            position: relative;
+                            /* start Slideshow container */
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                            .mySlides {
+                                width: 100%;
+                                height: 300px;
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    vertical-align: middle;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                                    @include prefixer(background-size,cover,webkit moz o);
+                                }
+                            }
+                            
+
+                             /* Next & previous buttons */
+                            // .prev, .next 
+                            .owl-prev,.owl-next{
+                                cursor: pointer;
+                                position: absolute;
+                                top: 50%;
+                                width: auto;
+                                padding: 16px !important;
+                                margin-top: -22px;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 18px;
+                                transition: 0.6s ease;
+                                border-radius: 0 3px 3px 0;
+                                user-select: none;
+                                outline: none;
+                                background-color: rgba($mainColor, .5);
+                                }
+        
+                                /* Position the "next button" to the right */
+                                // .next 
+                                .owl-next{
+                                right: 0;
+                                border-radius: 3px 0 0 3px;
+                                }
+                                
+                                
+                            }
+                            /* end Slideshow container */
+                        
+                        
+                        //  start inside-detail
+                        .inside-detail{
+                            p{
+                                display: flex;
+                                justify-content: space-around;
+                            }
+                        }
+                        //  end inside-detail
+                        //  start tech
+                        .tech{
+                            padding: 0 60px 0 60px;
+                            @media #{$maxMedium}{
+                                padding-left: 130px !important;
+                                }
+                            @media #{$maxMobile}{
+                                padding-left: 30px !important;
+                            }
+                            ul{
+                                padding-left: 25px;
+                                li{
+                                   position: relative;
+                                   &::before{
+                                       position: absolute;
+                                        content: "";
+                                        width: 15px;
+                                        height: 15px;
+                                        background-color: $mainColor;
+                                        left: -25px;
+                                        top: 5px;
+                                   }
+                                }
+                            }
+                        }
+                        //  end tech
+
+                        //  start button demo
+                        .demo{
+                            display: flex;
+                            justify-content: center;
+                            
+                                button{
+                                    width: 200px;
+                                    height: 60px;
+                                    background: transparent;
+                                    border: 2px solid $mainColor;
+                                    text-transform: capitalize;
+                                    cursor: pointer;
+                                    margin: 15px;
+                                    outline: none;
+                                }
+                            
+                        }
+                        //  end button demo
+
+                        }
+                        //  end slider
+                    }
+                    //  end detail-content
+                }
+
+                // end detail-work
+            //  this class can change when to add new work
+            .special-conten{
+                height: 400px !important;
+                background-size: cover;
+                margin-left: 0 !important;
+                display: none;
+                @media #{$maxMobile}{
+                   height: auto !important;
+                }
+                img{
+                    height: 100%;
+                }
+                .overlay-content{
+                    margin: 150px auto !important;
+                    @media #{$maxMobile}{
+                        margin: 50px !important;
+                     }
+                   
+                }
+            }
+            //  this class can change when to add new work
+        }
+        // start my-work-content
+
+        //  start icon toggle more my-work-content
+       .toggle{
+           margin-top: 10px;
+           text-align: center;
+        .icontoggle{
+            text-align: center;
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+            background-color: $mainColor;
+            line-height: 50px;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+        }
+        .fa-minus{
+            display: none;
+        }
+       }
+        // end  icon toggle more my-work-content
+    }
+    //  end my-work
+
+
+    //  start skills
+    .skill{
+
+        //  start skill-content
+        .skill-content{
+            position: relative;
+            margin-top: 100px;
+            @media #{$maxMobile}{
+                width: 100%;
+                overflow: hidden;
+             }
+            //  start ul in skill-content
+            ul{
+                padding: 0;
+                margin: 0;
+                //  start li in skill-content
+                li{
+                    position: relative;
+                    &:nth-child(2n)  {
+                        .percent{
+                            top: -80%;
+                            left: calc(60% + 5rem);
+                            @media #{$maxMobile}{
+                                left:0;
+                                top: 0;
+                            }
+                            
+                        }
+                        .line{
+                            right: 31%;
+                            @media #{$maxMedium}{
+                                right: 21%;
+                                 }
+                            @include prefixer(transform,rotate(-16deg),webkit moz o);
+                            @include prefixer(transform-origin, left center,webkit moz o);
+                            
+
+                        }
+                    }
+                    &:nth-child(odd) {
+                        
+                        .percent{
+                            top: -40px;
+                            right:calc(50% + 2rem);
+                            @media #{$maxMobile}{
+                                right:0;
+                                top:0;
+                            }
+                        }
+                        .line {
+                            left: 31%;
+                            @media #{$maxMedium}{
+                               left: 21%;
+                                }
+                            @include prefixer(transform,rotate(16deg),webkit moz o);
+                            @include prefixer(transform-origin, center right,webkit moz o);
+                        }
+                        
+                    }
+                    //  start skill link
+                    .skill-link{
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-align: center;
+                        justify-content: center;
+                        @media #{$maxMobile}{
+                           justify-content: space-between;
+                        }
+                        //  start percent
+                        .percent{
+                            position: absolute;
+                            width: 12em;
+                            height: 9em;
+                            z-index: 8888;
+                            @media#{$maxMobile}{
+                                min-width: 50%;
+                                max-width: 50%;
+                                height: auto;
+                                margin: 0 0 0 1.5rem;
+                                @include prefixer(transform,scale(.9),webkit moz o);
+                                @include prefixer(transition,transform .35s,webkit moz o);
+                                position: relative;
+                                order: 2;
+                                display: flex;
+                                justify-content: flex-end;
+                                z-index: 888;
+                            }
+                            //  start per1
+                            .per1{
+                                width: 50px;
+                                line-height: 50px;
+                                height: 50px;
+                                background-color:$mainColor;
+                                border-radius: 55% 0% 70% 0% /40% 45% 49% 50%;
+                                text-align: center;
+                                color: #fff;
+                            }
+                            //  end per1
+                        }
+                        //  end percent
+
+                        //  start line
+                        .line{
+                            position: absolute;
+                            content: "";
+                            width: 11em;
+                            height: 1px;
+                            background: #16161d;
+                            opacity: .1;
+                            pointer-events: none;
+                            top: 50%;
+                            transition: opacity .35s;
+                            z-index: 22;
+                            @media #{$maxMobile}{
+                               display: none;
+                                  
+                            }
+                        }
+                        //  end line
+                    }
+                    //  end skill link
+                }
+                //  end li in skill-content
+            }
+            //  end ul in skill-content
+        }
+        //  end skill-content
+    }
+
+    // end skills
+
+    //  start call-me
+    .call-me{
+        display: flex;
+        text-transform: capitalize;
+        justify-content: space-around;
+        text-align: left;
+        @media #{$maxMobile}{
+           flex-direction: column;
+        }
+        //  start tech
+        .tech{
+            @media #{$maxMobile}{
+               order: 2;
+            }
+            ul{
+                padding-left: 25px;
+                @media #{$maxMobile}{
+                    font-size:12px;
+                 }
+                li{
+                   position: relative;
+                   &::before{
+                       position: absolute;
+                        content: "";
+                        width: 15px;
+                        height: 15px;
+                        background-color: $mainColor;
+                        left: -25px;
+                        top: 5px;
+                        @media #{$maxMobile}{
+                            top: 8px;
+                            
+                         }
+                   }
+                }
+            }
+        }
+        //  end tech
+
+        //  start call
+        .call{
+            @media #{$maxMobile}{
+               order: 1;
+               margin-bottom: 30px;
+            }
+            p{
+                a{
+                    color: $mainColor;
+                }
+            }
+            
+                button{
+                    width: 200px;
+                    height: 60px;
+                    background: transparent;
+                    border: 2px solid $mainColor;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    outline: none;
+                }
+            
+        }
+        // end call
+        
+    }
+    //  end call-me
+}
+//  end layout

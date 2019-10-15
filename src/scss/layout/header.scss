@@ -1,0 +1,36 @@
+//  start header
+    
+    header{
+       
+        //  start title-header
+        .header-title{
+            padding: 80px 0;
+            i{
+                display: block;
+                font-size: 80px;
+            }
+            span{
+                border-top: 3px solid $mainColor; 
+                text-transform: capitalize;
+            }
+        }
+        //  end title-header
+
+        //  start header-content
+        .header-content{
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            p{
+                text-transform: capitalize;
+                font-size: 15px;
+                line-height: 2.5;
+               @media #{$maxMobile}{
+                   font-size: 10px;
+               }
+
+            }
+        }
+        //  end header-content
+    }
+//  end header

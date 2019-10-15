@@ -1,0 +1,34 @@
+// Small devices (landscape phones, 576px and up)
+$minMobile: "(min-width: 576px)";
+
+// Medium devices (tablets, 768px and up)
+$minMedium :"(min-width: 768px) ";
+
+// Large devices (desktops, 992px and up)
+$minLarge :"(min-width: 992px) ";
+
+// Extra large devices (large desktops, 1200px and up)
+$minXlarge : "(min-width: 1200px) ";
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+$maxMobile :"(max-width:768px)";
+// Medium devices (tablets, 768px and up)
+$maxMedium :"(max-width: 992px)";
+// Extra large devices (large desktops, 1200px and up)
+$maxlarge :"(max-width: 1200px)";
+
+//  this color is main color in site
+$mainColor:orange;
+
+//  this color is scan color in site
+$scanColor:#9c9c9c;
+
+
+$text-right:right;
+$text-left:left;

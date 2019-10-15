@@ -1,0 +1,164 @@
+//  start load page
+#load{
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999999;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    //  start load content
+    .load-cont {
+        //  start loaded
+        .loaded {
+            position: relative;
+            padding: 20px 70px;
+            i{
+                display: block;
+                font-size: 80px;
+                position: relative;
+                
+            }
+            .logo{
+                border-top: 3px solid $mainColor; 
+                text-transform: capitalize;
+            }
+            .span-1 {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 2px;
+                background-color: $mainColor;
+                left: 0;
+                bottom: 0;
+            }
+            .span-2 {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 2px;
+                background-color: $mainColor;
+                left: 0;
+                top: 0;
+            }
+            .span-3 {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 2px;
+                background-color: $mainColor;
+                right: 0;
+                top: 0;
+            }
+            .span-4 {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 2px;
+                background-color: $mainColor;
+                right: 0;
+                bottom: 0;
+            }
+            .span-1 {
+                    @include prefixer(animation,move1 1500ms infinite ease,webkit moz o);
+            }
+            
+            .span-2 {
+                    @include prefixer(animation,move2 1500ms infinite ease,webkit moz o);
+            }
+            
+            .span-3 {
+                @include prefixer(animation,move3 1500ms infinite ease,webkit moz o);
+            }
+            
+            .span-4 {
+                @include prefixer(animation,move4 1500ms infinite ease,webkit moz o);
+            }
+
+    
+        }
+    //  end loaded   
+    }
+    //  end load content
+
+    // start animation all span
+    @include keyFrame(move1) {
+        0% {
+            height: 100%; 
+            bottom: 0;
+        }
+        54% {
+            height: 0; 
+            bottom: 100%;
+        }
+        55% {
+            height: 0; 
+            bottom: 0;
+        }
+        100% {
+            height: 100%; 
+            bottom: 0;
+        }
+    }
+
+    
+    @include keyFrame(move2){
+        0% {
+            width: 0;
+            left: 0;
+        }
+        50% {
+            width: 100%; 
+            left: 0;
+        }
+        100% {
+            width: 0; 
+            left: 100%;
+        }
+    }
+
+    
+    @include keyFrame(move3){
+        0% {
+            height: 100%; 
+            top: 0;
+        }
+        54% {
+            height: 0; 
+            top: 100%;
+        }
+        55% {
+            height: 0; 
+            top: 0;
+        }
+        100% {
+            height: 100%; 
+            top: 0;
+        }
+    }
+
+
+    @include keyFrame(move4){
+        0% {
+            width: 0; 
+            right: 0;
+        }
+        55% {
+            width: 100%; 
+            right: 0;
+        }
+        100% {
+            width: 0; 
+            right: 100%;
+        } 
+    }
+    // end animation all span
+                
+    
+    
+}
+//  end load page
