@@ -4,6 +4,7 @@ export default function CartItem({item,value}) {
     const {id,title,img,price,count,total} = item;
     const {increment,decrement,removeItem} = value;
     return (
+      
         <div style={{display:'flex'}} className='md2'>
           <div style={{margin:'auto'}}>
             <img src={img} alt='product' style={{width:'5rem',height:'5rem'}}/>
@@ -27,6 +28,7 @@ export default function CartItem({item,value}) {
           <div style={{margin:'auto'}}>
           <span className='md3'>total</span><h3> {total}</h3>
           </div>
+          
         </div>
     )
 }

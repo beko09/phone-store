@@ -65,10 +65,11 @@ class ProductProvider extends Component {
         this.setState(()=>{
             return{products:tempProduct,cart:[...this.state.cart,product]}
         },()=>{
-            this.addTotal()
+            this.addTotal();
+            
         })
     }
-    
+   
     openModel = (id)=>{
         const product = this.getItem(id);
         this.setState(()=>{
@@ -176,8 +177,9 @@ class ProductProvider extends Component {
                 removeItem:this.removeItem,
                 clearCart:this.clearCart
             }}>
-                {/* <button onClick={this.tester}>click me</button> */}
-              {this.props.children}  
+                
+              {this.props.children} 
+             
             </ProductContext.Provider>
         )
     }
